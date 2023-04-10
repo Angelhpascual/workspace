@@ -16,7 +16,7 @@ export default function App() {
 function Thing() {
   const ref = useRef()
   useFrame(() => {
-    ref.current.rotation.x = ref.current.rotation.y += 0.01
+    ref.current.rotation.x += 0.01
   })
   return (
     <mesh ref={ref}>
